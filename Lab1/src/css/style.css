@@ -4,12 +4,13 @@
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
 body {
-	background: #212121;
+	background: #191818;
 	font-size:22px;
 	line-height: 32px;
 	color: #ffffff;
 	word-wrap:break-word !important;
 	font-family: 'Open Sans', sans-serif;
+    margin: 0;
 	}
 
 h1 {
@@ -48,8 +49,12 @@ p {
 }
 
 nav {
-	margin: 50px 0;
-	background-color: #E64A19;
+	margin: 0px;
+    border-radius: 10px;
+	background-color: #4e6fbb;
+    position: fixed; /* Hace que la barra de navegación sea fija en la parte superior */
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    top: 0; 
 }
 
 nav ul {
@@ -61,7 +66,7 @@ nav ul {
 	
 nav ul li {
 	display:inline-block;
-	background-color: #E64A19;
+	background-color: #4e6fbb;
     margin-right: 10px;
 	}
 
@@ -75,7 +80,7 @@ nav a {
 }
 
 nav a:hover { 
-	background-color: #000000; 
+	background-color: #20ade0; 
 }
 
 /* Hide Dropdowns by Default */
@@ -109,3 +114,102 @@ nav ul ul ul li {
 /* Change this in order to change the Dropdown symbol */
 li > a:after { content:  ' +'; }
 li > a:only-child:after { content: ''; }
+
+.card{
+    width: 98%;
+    height: 20%;
+    margin-top: 10;
+    border-radius: 10px;
+    background-color: #364360;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card h2 {
+    color: #ffffff; 
+    font-size: 24px; 
+}
+
+.card h4 {
+    color: #cccccc; 
+    font-size: 18px; 
+    margin-top: 10px;
+}
+
+
+header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../resource/1.webp);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+
+    .btn-xl {
+        padding: 20px 40px;
+        border-color: #1ee2e7;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #1ee2e7;
+    }
+
+    .btn-xl {
+        border-color: #17d0d5;
+        color: #fff;
+        background-color: #17d0d5;
+    }
+}
