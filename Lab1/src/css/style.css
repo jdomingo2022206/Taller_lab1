@@ -1,7 +1,7 @@
-/* CSS Document */
-/*https://codepen.io/celincky/pen/abPjZb*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
 
 body {
 	background: #191818;
@@ -38,16 +38,14 @@ h1 {
 	text-align:center;
 	font-size:60px;
 	font-family: 'Bree Serif', 'serif';
-	}
-
-#container {
-	margin: 0 auto;
 }
+
 
 p {
 	text-align: center;
 }
 
+/* Nav */
 nav {
 	margin: 0px;
     border-radius: 10px;
@@ -115,26 +113,174 @@ nav ul ul ul li {
 li > a:after { content:  ' +'; }
 li > a:only-child:after { content: ''; }
 
-.card{
-    width: 98%;
-    height: 20%;
-    margin-top: 10;
-    border-radius: 10px;
-    background-color: #364360;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.card h2 {
-    color: #ffffff; 
-    font-size: 24px; 
-}
+/*cards*/
 
-.card h4 {
-    color: #cccccc; 
-    font-size: 18px; 
-    margin-top: 10px;
-}
+:root{
+    --primary-color: #378684;
+    --primary-color-dark: #056363;
+    --secondary-color: #576574;
+    --bg-color: #6db5d4;
+    --text-color: white;
+  }
+  
+  .cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .card.h1{
+    font-size: 2rem;
+    color: var(--primary-color-dark);
+    margin-left: 10px;
+    line-height: 1rem;
+  }
+  
+  .card.h2{
+    font-size: 1.5rem;
+  }
+  
+  p{
+    font-size: .8rem;
+  }
+  
+  .title>p{
+    color: var(--secondary-color);
+    margin: 0px 0 20px 10px;
+  }
+  
+  .card{
+    margin: 10px;
+    background: rgb(29, 161, 198)5)33, 20, 20);
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    padding: 25px 30px;
+    color: var(--primary-color);
+  }
+  
+  .card::after{
+    content: '';
+    background: var(--primary-color);
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .card-body{
+    position: relative;
+    z-index: 1;
+    transition: all .3s ease-in;
+  }
+  
+  .card:hover .card-body{
+    color: var(--text-color);
+  }
+  
+  /* === ANIMATIONS === */
+  /* = 1. Circle = */
+  .circle::after{
+    clip-path: circle(10% at 0% 0%);
+    transition: all .3s ease-in;
+  }
+  
+  .circle:hover::after{
+    clip-path: circle(100%);
+  }
+  
+  /* = 2. Ripple = */
+  .ripple::after{
+    opacity: 0;
+    clip-path: circle(10% at 50% 50%);
+    transition: all .25s ease-in;
+  }
+  
+  .ripple:hover::after{
+    opacity: 1;
+    clip-path: circle(100%);
+  }
+  
+  /* = 3. Slide door = */
+  .slide-door::after{
+    clip-path: inset(0% 100% 0% 100%);
+    transition: all .3s ease-in;
+  }
+  
+  .slide-door:hover::after{
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  
+  /* = 4. Slide in = */
+  .slide-in::after{
+    clip-path: inset(0% 100% 0% 0%);
+    transition: all .3s ease-in;
+  }
+  
+  .slide-in:hover::after{
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  
+  /* = 5. Slide out = */
+  .slide-out::after{
+    clip-path: inset(0% 0% 0% 100%);
+    transition: all .3s ease-in;
+  }
+  
+  .slide-out:hover::after{
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  
+  /* = 6. Diamond = */
+  .diamond::after{
+    opacity: 0;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: all .1s ease-in;
+  }
+  
+  .diamond:hover::after{
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  /* = 7. Slide up = */
+  .slide-up::after{
+    clip-path: inset(100% 0% 0% 0%);
+    transition: all .3s ease-in;
+  }
+  
+  .slide-up:hover::after{
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  
+  /* = 8. Slide down = */
+  .slide-down::after{
+    clip-path: inset(0% 0% 100% 0%);
+    transition: all .3s ease-in;
+  }
+  
+  .slide-down:hover::after{
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  
+  /* = 9. Arrow = */
+  .arrow::after{
+    opacity: 0;
+    clip-path: polygon(0% 0%, 0 0, 27% 51%, 0 100%, 0% 100%);
+    transition: all .2s ease-in;
+  }
+  
+  .arrow:hover::after{
+    opacity: 1;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+
+/*header*/
 
 
 header {
