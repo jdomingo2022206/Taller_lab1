@@ -44,24 +44,30 @@ h1 {
 p {
   text-align: center;
 }
+
 /*nav*/
 
 
 /* Estilos para el hover de los elementos de la lista */
 .navbar-nav .nav-item .nav-link:hover {
-  background-color: #4e8cf6; /* Cambio de color a rojo más claro en hover */
-  color: #fff; /* Cambio de color de texto a blanco en hover */
+  background-color: #4e8cf6;
+  /* Cambio de color a rojo más claro en hover */
+  color: #fff;
+  /* Cambio de color de texto a blanco en hover */
 }
 
 /* Estilos para el dropdown (menú desplegable) */
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
-  background-color: #4e8cf6; /* Color de fondo del dropdown en hover */
+  background-color: #4e8cf6;
+  /* Color de fondo del dropdown en hover */
 }
 
 /* Estilos para los elementos del dropdown en hover */
 .navbar-nav .nav-item.dropdown:hover .dropdown-menu .dropdown-item:hover {
-  background-color: #4e8cf6; /* Cambio de color a rojo más claro en hover del dropdown */
-  color: #fff; /* Cambio de color de texto a blanco en hover del dropdown */
+  background-color: #4e8cf6;
+  /* Cambio de color a rojo más claro en hover del dropdown */
+  color: #fff;
+  /* Cambio de color de texto a blanco en hover del dropdown */
 }
 
 .btn-xl {
@@ -163,158 +169,158 @@ header .intro-text .intro-heading {
   }
 
   /*Cont*/
-  
+
 
   /*cards*/
 
-:root {
-  --primary-color: #378684;
-  --primary-color-dark: #056363;
-  --secondary-color: #576574;
-  --bg-color: #6db5d4;
-  --text-color: white;
-}
+  :root {
+    --primary-color: #378684;
+    --primary-color-dark: #056363;
+    --secondary-color: #576574;
+    --bg-color: #6db5d4;
+    --text-color: white;
+  }
 
-.cards {
-  display: grid;
-  background-color: #573515;
-  grid-template-columns: 50% 50%;
-  justify-content: space-evenly;
-  align-items: center;
-}
+  .cards {
+    display: grid;
+    background-color: #11354ff2;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-.card.h1 {
-  font-size: 2rem;
-  color: var(--primary-color-dark);
-  margin-left: 10px;
-  line-height: 1rem;
-}
+  .card.h1 {
+    font-size: 2rem;
+    color: var(--primary-color-dark);
+    margin-left: 10px;
+    line-height: 1rem;
+  }
 
-.card.h2 {
-  font-size: 1.5rem;
-}
+  .card.h2 {
+    font-size: 1.5rem;
+  }
 
-.card.h4 {
-  font-size: 1.5rem;
-}
+  .card.h4 {
+    font-size: 1.5rem;
+  }
 
-p {
-  font-size: .8rem;
-}
+  p {
+    font-size: .8rem;
+  }
 
-.title>p {
-  color: var(--secondary-color);
-  margin: 0px 0 20px 10px;
-}
+  .title>p {
+    color: var(--secondary-color);
+    margin: 0px 0 20px 10px;
+  }
 
-.card {
-  margin: 10px;
-  background: rgb(29, 161, 198)5)33, 20, 20);
-  cursor: pointer;
-  border-radius: 15px;
-  position: relative;
-  padding: 25px 30px;
-  color: var(--primary-color);
-  text-align: center;
-}
+  .card {
+    margin: 10px;
+    background: rgb(29, 161, 198)5)33, 20, 20);
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    padding: 25px 30px;
+    color: var(--primary-color);
+    text-align: center;
+  }
 
-.card::after {
-  content: '';
-  background: var(--primary-color);
-  border-radius: 15px;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 0;
-}
+  .card::after {
+    content: '';
+    background: var(--primary-color);
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
 
-.card-body {
-  position: relative;
-  z-index: 1;
-  transition: all .3s ease-in;
-}
+  .card-body {
+    position: relative;
+    z-index: 1;
+    transition: all .3s ease-in;
+  }
 
-.card:hover .card-body {
-  color: var(--text-color);
-}
+  .card:hover .card-body {
+    color: var(--text-color);
+  }
 
-/*Animation*/
+  /*Animation*/
 
-/* = 7. Slide up = */
-.slide-up::after {
-  clip-path: inset(100% 0% 0% 0%);
-  transition: all .3s ease-in;
-}
+  /* = 7. Slide up = */
+  .slide-up::after {
+    clip-path: inset(100% 0% 0% 0%);
+    transition: all .3s ease-in;
+  }
 
-.slide-up:hover::after {
-  clip-path: inset(0% 0% 0% 0%);
-}
+  .slide-up:hover::after {
+    clip-path: inset(0% 0% 0% 0%);
+  }
 
-/* = 9. Arrow = */
-.arrow::after {
-  background-color: rgb(165, 153, 14);
-  opacity: 0;
-  clip-path: polygon(0% 0%, 0 0, 27% 51%, 0 100%, 0% 100%);
-  transition: all .2s ease-in;
-}
+  /* = 9. Arrow = */
+  .arrow::after {
+    background-color: rgb(165, 153, 14);
+    opacity: 0;
+    clip-path: polygon(0% 0%, 0 0, 27% 51%, 0 100%, 0% 100%);
+    transition: all .2s ease-in;
+  }
 
-.arrow:hover::after {
-  opacity: 1;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-}
+  .arrow:hover::after {
+    opacity: 1;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
 
-/* = 10. ArrowLeft = */
-.arrowLeft::after {
-  background-color: rgb(165, 153, 14);
-  opacity: 0;
-  clip-path: polygon(100% 0, 100% 0, 73% 51%, 100% 100%, 100% 100%);
-  transition: all .2s ease-in;
-}
+  /* = 10. ArrowLeft = */
+  .arrowLeft::after {
+    background-color: rgb(165, 153, 14);
+    opacity: 0;
+    clip-path: polygon(100% 0, 100% 0, 73% 51%, 100% 100%, 100% 100%);
+    transition: all .2s ease-in;
+  }
 
-.arrowLeft:hover::after {
-  opacity: 1;
-  clip-path: polygon(100% 0, 25% 0, 0% 50%, 25% 100%, 100% 100%);
-}
+  .arrowLeft:hover::after {
+    opacity: 1;
+    clip-path: polygon(100% 0, 25% 0, 0% 50%, 25% 100%, 100% 100%);
+  }
 
-/*text hide*/
+  /*text hide*/
 
-.unhidden-text {
-  opacity: 1;
-  transition: opacity 0.3s ease-in;
-  text-align: center;
-}
+  .unhidden-text {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    text-align: center;
+  }
 
-.slide-up:hover .unhidden-text {
-  opacity: 0;
-  color: var(--text-color);
-}
+  .slide-up:hover .unhidden-text {
+    opacity: 0;
+    color: var(--text-color);
+  }
 
-.hidden-text {
-  opacity: 0;
-  transition: opacity 0.3s ease-in;
-  text-align: center;
-}
+  .hidden-text {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    text-align: center;
+  }
 
-.slide-up:hover .hidden-text {
-  opacity: 1;
-  color: var(--text-color);
-}
+  .slide-up:hover .hidden-text {
+    opacity: 1;
+    color: var(--text-color);
+  }
 
-/*footer*/
+  /*footer*/
 
-.ft {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  justify-content: space-evenly;
-  align-items: center;
-}
-  
+  .ft {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
 
   /* img*/
   .img {
-    background-color: #28252587;
+    background-color: #3c464587;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -341,4 +347,53 @@ p {
     grid-template-columns: 33% 33% 33%;
   }
 
-  
+  /*Otros*/
+
+  .otros {
+    display: grid;
+    background-color: #573515;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+  }
+
+  .cont-otros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .card-otros {
+    background-color: #0a7778;
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+    border-radius: 15px;
+  }
+
+  .card-otros h1{
+    font-family: 'Arial', sans-serif; /* Elige la fuente que prefieras */
+    color: #ffffff; /* Color blanco para el texto */
+    font-size: 35px; /* Tamaño del texto */
+  } 
+
+  .card-otros h3{
+    font-family: 'Arial', sans-serif; /* Elige la fuente que prefieras */
+    color: #ffffff; /* Color blanco para el texto */
+    font-size: 20px; /* Tamaño del texto */
+  }
+
+  .card-otros:hover {
+    transform: scale(1.1);
+  }
