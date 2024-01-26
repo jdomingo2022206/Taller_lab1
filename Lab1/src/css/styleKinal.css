@@ -96,7 +96,7 @@ header {
   text-align: center;
   color: #fff;
   background-attachment: scroll;
-  background-image: url(../resource/kinal.webp);
+  background-image: url(../resource/panoramica.webp);
   background-position: center center;
   background-repeat: none;
   -webkit-background-size: cover;
@@ -260,7 +260,7 @@ header .intro-text .intro-heading {
 
   /* = 9. Arrow = */
   .arrow::after {
-    background-color: rgb(165, 153, 14);
+    background-color: #fd992d;
     opacity: 0;
     clip-path: polygon(0% 0%, 0 0, 27% 51%, 0 100%, 0% 100%);
     transition: all .2s ease-in;
@@ -273,7 +273,7 @@ header .intro-text .intro-heading {
 
   /* = 10. ArrowLeft = */
   .arrowLeft::after {
-    background-color: rgb(165, 153, 14);
+    background-color: #fd992d;
     opacity: 0;
     clip-path: polygon(100% 0, 100% 0, 73% 51%, 100% 100%, 100% 100%);
     transition: all .2s ease-in;
@@ -351,7 +351,8 @@ header .intro-text .intro-heading {
 
   .otros {
     display: grid;
-    background-color: #573515;
+    background: rgb(253,153,45);
+    background: linear-gradient(0deg, rgba(253,153,45,1) 74%, rgba(17,53,79,1) 100%);
     grid-template-columns: 50% 50%;
     justify-content: center;
     align-items: center;
@@ -368,7 +369,7 @@ header .intro-text .intro-heading {
   }
 
   .card-otros {
-    background-color: #0a7778;
+    background-color: #2572db;
     width: 500px;
     height: 700px;
     display: flex;
@@ -397,3 +398,45 @@ header .intro-text .intro-heading {
   .card-otros:hover {
     transform: scale(1.1);
   }
+
+  .inicio {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta la altura según sea necesario */
+    /*background-image: url('../resource/gradudados.jpg'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen de fondo */
+    /*background-size: cover;*/
+    background-color: #4e8cf6;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(17,53,79);
+    background: linear-gradient(0deg, rgba(17,53,79,1) 3%, rgba(253,153,45,1) 15%);
+    /*background-color: rgba(0, 0, 0, 0.5); /* Opacidad del fondo (ajusta el último valor según sea necesario) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Color del texto */
+}
+
+.overlay h1 {
+    font-size: 24px; /* Tamaño del texto */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.overlay h4 {
+  text-align: center;
+  justify-content: center;
+  padding: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px; /* Tamaño del texto */
+  margin: 0; /* Elimina el margen predeterminado */
+}
