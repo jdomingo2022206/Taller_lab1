@@ -318,7 +318,7 @@ p {
 
 /*footer*/
 
-.ft{
+.ft {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   justify-content: space-evenly;
@@ -403,5 +403,34 @@ header .intro-text .intro-heading {
     border-color: #17d0d5;
     color: #fff;
     background-color: #17d0d5;
+  }
+
+  /* img*/
+  .img {
+    background-color: #28252587;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: fit-content;
+    /* Ajusta el tamaño al contenido */
+    padding: 10px;
+    /* Espacio de 2px alrededor de la imagen */
+    margin: 10px;
+    /* Margen alrededor de la tarjeta */
+  }
+
+  .img img {
+    max-width: 100%;
+    /* Asegura que la imagen no sobrepase el ancho de la tarjeta */
+    height: auto;
+    border-radius: 8px;
+    /* Agrega bordes redondeados a la imagen */
+  }
+
+  .cont-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 33% 33% 33%;
   }
 }
