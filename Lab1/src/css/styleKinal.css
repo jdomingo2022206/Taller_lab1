@@ -167,6 +167,8 @@ header .intro-text .intro-heading {
     color: #fff;
     background-color: #17d0d5;
   }
+}
+  
 
   /*Cont*/
 
@@ -174,7 +176,7 @@ header .intro-text .intro-heading {
   /*cards*/
 
   :root {
-    --primary-color: #378684;
+    --primary-color: #fd992d;
     --primary-color-dark: #056363;
     --secondary-color: #576574;
     --bg-color: #6db5d4;
@@ -260,7 +262,6 @@ header .intro-text .intro-heading {
 
   /* = 9. Arrow = */
   .arrow::after {
-    background-color: #fd992d;
     opacity: 0;
     clip-path: polygon(0% 0%, 0 0, 27% 51%, 0 100%, 0% 100%);
     transition: all .2s ease-in;
@@ -273,7 +274,6 @@ header .intro-text .intro-heading {
 
   /* = 10. ArrowLeft = */
   .arrowLeft::after {
-    background-color: #fd992d;
     opacity: 0;
     clip-path: polygon(100% 0, 100% 0, 73% 51%, 100% 100%, 100% 100%);
     transition: all .2s ease-in;
@@ -284,37 +284,31 @@ header .intro-text .intro-heading {
     clip-path: polygon(100% 0, 25% 0, 0% 50%, 25% 100%, 100% 100%);
   }
 
-  /*text hide*/
-
-  .unhidden-text {
-    opacity: 1;
-    transition: opacity 0.3s ease-in;
-    text-align: center;
-  }
-
-  .slide-up:hover .unhidden-text {
-    opacity: 0;
-    color: var(--text-color);
-  }
-
-  .hidden-text {
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
-    text-align: center;
-  }
-
-  .slide-up:hover .hidden-text {
-    opacity: 1;
-    color: var(--text-color);
-  }
-
   /*footer*/
 
   .ft {
+    background: rgb(13, 45, 125);
     display: grid;
     grid-template-columns: 33% 33% 33%;
     justify-content: space-evenly;
     align-items: center;
+
+    padding-top: 35px;
+  }
+
+  .ft h1,
+  .ft h2{
+    font-family: 'Arial', sans-serif; /* Elige la fuente que prefieras */
+    color: #ffffff; /* Color blanco para el texto */
+    text-align: center;
+    justify-content: center;
+  }
+
+  .ft h1{
+    font-size: 35px;
+  }
+  .ft h2{
+    font-size: 20px;
   }
 
 
@@ -369,6 +363,7 @@ header .intro-text .intro-heading {
   }
 
   .card-otros {
+    cursor: pointer;
     background-color: #2572db;
     width: 500px;
     height: 700px;
@@ -440,3 +435,4 @@ header .intro-text .intro-heading {
   font-size: 15px; /* Tamaño del texto */
   margin: 0; /* Elimina el margen predeterminado */
 }
+
